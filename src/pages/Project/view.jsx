@@ -4,6 +4,7 @@ import React from 'react'
 import mob from '../../asset/moborg.png'
 import exam from '../../asset/exam.png'
 import bmi from '../../asset/BMIAge.png'
+import portfolio from '../../asset/portfolio.png'
 function Project() {
   const data = [
     {
@@ -13,9 +14,15 @@ function Project() {
       github: 'https://github.com/SidLD/MOB'
     },
     {
+      img:portfolio,
+      title: 'Portfolio',
+      technology: 'React',
+      github: 'https://github.com/SidLD/Portfolio'
+    },
+    {
       img:mob,
       title: 'Restaurant Management - BackOffice',
-      technology: 'Linux, Apache, Mysql, PHP, Vue',
+      technology: 'Linux, Apache, Mysql, PHP, Laravel, Vue',
       github: 'https://github.com/SidLD/RestaurantManagement'
     },
     {
