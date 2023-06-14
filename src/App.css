@@ -1,38 +1,187 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: montserrat;
+  height: 100vh;
+}
+
+.root-layout > header{
+  background-color: lightblue;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.logo > h1{
+  font-size: 30px;
+  color: #F4D3D3;
+  padding: 30px 100px;
+  float: left; 
+}
+nav{
+  float: right;
+  padding: 20px 0px;
+  margin-right: 20px;
+}
+.link{
+  text-decoration: none;
+  color: #F4D3D3;
+  display: inline-block;
+  padding: 20px 10px;
+  font-weight: 900;
+}
+
+.link:active, .link:hover{
+  background-color: #1b9bff;
+  border: solid 1px #F4D3D3;
+  transition: .5s;
+}
+
+
+/*About Me */
+.about-me{
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+  font-family: "Candara" , sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 3% 3%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.card-img{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+.profile-img img{
+  z-index: 1;
+  width: 320px;
+  height: 320px;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid white;
+  margin-top: -75px;
+  margin-bottom: 50px;
+  
+  transition-duration: 0.5s;
+}
+.profile-img img:hover{
+  transform: scale(1.1);
+}
+
+.card-content{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+.card-content p{
+  font-size: 20px;
+}
+.card-content h3{
+  font-weight: bold;
+}
+
+/* Skill Header */
+.skill-header{
+  padding: 1rem;
+  position: relative;
+}
+.skill-header:after{
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #2ecc71;
+}
+.skill-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+.skill-box{
+  padding: 2rem;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+.skill-title{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  
 }
 
-.App-link {
-  color: #61dafb;
+/* Contact */
+.contact-box{
+  width: 80vh;
+  padding: 100px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #999;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form{
+  margin: 35px;
+}
+.input-field{
+  width: 400px;
+  margin-bottom: 20px;
+  height: 40px;
+  /* padding: auto 100px; */
+  padding-left: 10px;
+  border: 1px solid #777;
+  border-radius: 14px;
+}
+.submit-btn{
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px 50px;
+  background-color: #47c35a;
+  font-size: 12px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+/*project */
+
+.project-img img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: fill;
+}
+
+@media screen and (max-width:990px){
+  .skill-container{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
