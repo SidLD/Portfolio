@@ -9,7 +9,7 @@ function RootLayout() {
               <Link to='/'>Portfolio</Link>
           </div>
             <nav>
-                <NavLink className="link"  to="">About</NavLink>
+                <NavLink className="link" to="">About</NavLink>
                 <NavLink className="link" to="project">Projects</NavLink>
                 <NavLink className="link" to="contact">Contact</NavLink>
             </nav>
