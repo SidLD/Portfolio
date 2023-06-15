@@ -113,7 +113,7 @@ function About() {
             <h3 className='typed'>Hi! I'm Cid Libril</h3>
             <p className='typed'>I'm aspiring web developer and </p>
             <p className='typed'>A Bachelor Science in Computer Science Graduate</p>
-            <a href="./resume.pdf" className='resume'  download>Resume</a>
+            <a href="./resume.pdf" className='resume'  download>Download my Resume</a>
           </div>
           <div className="skill">
         <div className="skill-header">
