@@ -76,9 +76,9 @@ function Contact() {
                         Send <i class="fa-sharp fa-solid fa-paper-plane"></i>
                     </Button>
                 <footer className='footer'>
-                    <p><i class="fa-solid fa-location-dot"></i> Adress</p> 
-                    <p><i class="fa-solid fa-envelope"></i> cidlibril5@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 09123456789</p>
+                    <p className='hover-underline-animation'><i class="fa-solid fa-location-dot"></i> Adress</p> 
+                    <p className='hover-underline-animation'><i class="fa-solid fa-envelope"></i> cidlibril5@gmail.com</p>
+                    <p className='hover-underline-animation'><i class="fa-solid fa-phone"></i> 09123456789</p>
                 </footer>
             </Form>
             {/* <form ref={form} onSubmit={handleFormSubmit} className='contact-box'>
