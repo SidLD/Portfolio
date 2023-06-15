@@ -5,6 +5,7 @@ import mob from '../../asset/moborg.png'
 import exam from '../../asset/exam.png'
 import bmi from '../../asset/BMIAge.png'
 import portfolio from '../../asset/portfolio.png'
+import tracker from '../../asset/tracker.png'
 function Project() {
   const data = [
     {
@@ -12,6 +13,11 @@ function Project() {
       title: 'Mob.org',
       technology: 'Python & Flask',
       github: 'https://github.com/SidLD/MOB'
+    },{
+      img:tracker,
+      title: 'Student Tracker',
+      technology: 'Java',
+      github: 'https://github.com/SidLD/StudentTracker'
     },
     {
       img:portfolio,
@@ -52,7 +58,7 @@ function Project() {
                   </div>
                   <h3>{project.title}</h3>
                   <p>{project.technology}</p>
-                  <p><a href={project.github}>Github</a></p>
+                  <p><a href={project.github}>Go to Github <i class="fa-brands fa-github"></i></a></p>
                 </div>
               </div>
             )}
