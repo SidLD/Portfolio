@@ -58,7 +58,7 @@ function Project() {
                   </div>
                   <h3>{project.title}</h3>
                   <p>{project.technology}</p>
-                  <p><a href={project.github}>Go to Github <i class="fa-brands fa-github"></i></a></p>
+                  <p className='hover-underline-animation'><a href={project.github}>Go to Github <i class="fa-brands fa-github"></i></a></p>
                 </div>
               </div>
             )}
