@@ -5,7 +5,7 @@ import cardBackground from "../asset/cardBackground.jpg"
 function About() {
   const skills = [
     {
-      title: "Full Stack Java",
+      title: "Full Stack Java & REST",
       icon:<i className="fa-brands fa-java fa-xl"></i>,
       description: " A full-stack Java developer is a web programmer who uses Java, a popular computer programming language. These professionals write code in all three layers of a web-based application: the front-end, the back-end and the database layer"
     },
