@@ -51,14 +51,14 @@ function Project() {
       <h2 className='intro-title'>Projects</h2>
       <div className="skill-container">
             {data.map((project, index)=> 
-              <div className="skill-box skill-box2" key={index}>
+              <div className="skill-box project-box skill-box2" key={index}>
                 <div className="skill-title">
                   <div className="project-img">
                     <img src={project.img} alt={project.title}/>
                   </div>
-                  <h3>{project.title}</h3>
-                  <p>{project.technology}</p>
-                  <p className='hover-underline-animation'><a href={project.github}>Go to Github <i class="fa-brands fa-github"></i></a></p>
+                  <h3 className="project-title"><span className=' hover-underline-animation'>{project.title}</span></h3>
+                  <p className='project-title'>Technology: {project.technology}</p>
+                  <p className='project-tech'><a href={project.github}> Go to Github <i class="fa-brands fa-github"></i></a></p>
                 </div>
               </div>
             )}
