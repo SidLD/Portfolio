@@ -354,7 +354,7 @@ nav{
 }
 @media screen and (max-width:500px){
   .card{
-    height: 4000px;
+    height: 5600px;
   }
   .skill-box{
     padding: 2rem 1rem;
