@@ -99,7 +99,7 @@ function About() {
       <div className='intro'> 
        
         <div className='card'>
-          <h2>About Me</h2>     
+          <h2 className='intro-title'>About Me</h2>     
           <div className="card-img">
             <img src={cardBackground} alt='profile'/>
           </div>
@@ -115,7 +115,7 @@ function About() {
       </div>
       <div className="skill">
         <div className="skill-header">
-          <h3>Skills & Experience in Programming</h3>
+          <h3 className='intro-title'>Skills & Experience in Programming</h3>
         </div>
         <div className="skill-container">
             {skills.map((skill, index)=> 

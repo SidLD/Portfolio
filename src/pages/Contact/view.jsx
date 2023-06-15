@@ -31,6 +31,7 @@ function Contact() {
     };  
     return (
         <div>
+            <h3 className='intro-title'>Contact Me</h3>
             <Form className='contact-box'
                 {...formItemLayout}
                 initialValues={

@@ -8,34 +8,34 @@ body{
   height: 100vh;
 }
 
-.root-layout > header{
+.root-layout header{
   background-color: #526D82;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding: 20x auto;
+  height: 70px;
 }
 .logo > a{
   text-decoration: none;
   font-size: 30px;
   color: #fff;
-  padding: 30px 100px;
+  padding: 20px 20px;
   float: left; 
 }
 nav{
   float: right;
-  padding: 20px 0px;
-  margin-right: 20px;
+  margin: 5px 20px;
 }
 .link{
   text-decoration: none;
-  
   color: #fff;
   display: inline-block;
   padding: 20px 10px;
   font-weight: 900;
 }
 
-.link:active, .link:hover{
+.active{
   background-color: #1b9bff;
   border: solid 1px #F4D3D3;
   transition: .5s;
@@ -201,6 +201,12 @@ nav{
   padding-top: 0px;
 }
 
+.intro-title{
+  color:white;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px auto;
+}
 
 
 /*project */

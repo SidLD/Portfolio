@@ -48,7 +48,7 @@ function Project() {
   ]
   return (
     <div>
-      <h2>Projects</h2>
+      <h2 className='intro-title'>Projects</h2>
       <div className="skill-container">
             {data.map((project, index)=> 
               <div className="skill-box" key={index}>
