@@ -75,6 +75,11 @@ function Contact() {
                     <Button block className='submit-btn' type="primary" htmlType="submit">
                         Send <i class="fa-sharp fa-solid fa-paper-plane"></i>
                     </Button>
+                <footer className='footer'>
+                    <p><i class="fa-solid fa-location-dot"></i> Adress</p> 
+                    <p><i class="fa-solid fa-envelope"></i> cidlibril5@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09123232</p>
+                </footer>
             </Form>
             {/* <form ref={form} onSubmit={handleFormSubmit} className='contact-box'>
             <input placeholder='Name' className='input-field' type="text" name="name" />

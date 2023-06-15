@@ -57,7 +57,7 @@ nav{
 .card{
   font-family: "Candara" , sans-serif;
   width: 100vw;
-  height: 2800px;
+  height: 3000px;
   margin: 3% 3%;
   overflow: hidden;
   border-radius: 10px;
@@ -212,7 +212,6 @@ nav{
   text-decoration: none;
   color: black;
   background-color: #2ecc71;
-  
   border-radius: 25px;
   padding: 0px 20px;
   transition-duration: 0.7s;
@@ -231,6 +230,20 @@ nav{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: fill;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer p{
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1rem;
+  transition-duration: 1s;
+}
+.footer p:hover{
+  text-decoration: underline;
 }
 
 @media screen and (max-width:990px){
@@ -283,6 +296,9 @@ nav{
   }
 }
 @media screen and (max-width:500px){
+  .card{
+    height: 4000px;
+  }
   .skill-box{
     padding: 2rem 1rem;
     cursor: pointer;
