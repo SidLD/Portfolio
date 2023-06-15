@@ -1,7 +1,6 @@
 import React from 'react'
 import profile from "../asset/crop.jpg"
 import cardBackground from "../asset/cardBackground.jpg"
-
 function About() {
   const skills = [
     {
@@ -94,27 +93,27 @@ function About() {
   ]
   
   return (
-    <div className='about-me' id='about'>
+    <div className='about-me parallax' id='about'>
       
-      <h2 className='intro-title'>About Me</h2>    
+      <h2 className='intro-title animate-charcter'>About Me</h2>    
       <div className='intro'> 
        
         <div className='card'> 
-        
-          <div className="card-img">
+        <div className="card-img">
             <img src={cardBackground} alt='profile'/>
           </div>
-          <br/>
-          <br />
-          <div className="profile-img">
-            <img src={profile} alt='profile'/>
-          </div>
-          <div className="card-content container">
-            <h3 className='typed'>Hi! I'm Cid Libril</h3>
-            <p className='typed'>I'm aspiring web developer and </p>
-            <p className='typed'>A Bachelor Science in Computer Science Graduate</p>
-            <a href="./resume.pdf" className='resume'  download>Download my Resume</a>
-          </div>
+          <div className="landing-page">
+            <div className="profile-img ">
+              <img src={profile} alt='profile' className='hover-underline-animation'/>
+            </div>
+            <div className="card-content container">
+              <h3 className='typed '> Hi! I'm Cid Libril <i className="fa-solid fa-hand-wave"></i></h3>
+              <p className='typed'>I'm aspiring web developer and </p>
+              <p className='typed'>A Bachelor Science in Computer Science Graduate</p>
+              <a href="./resume.pdf" className='resume'  download>Download my Resume</a>
+            </div>
+            
+            </div>
           <div className="skill">
         <div className="skill-header">
           <br/>
@@ -122,20 +121,23 @@ function About() {
           <br/>
           <br/>
           <br/>
-          <h3 className='intro-title'>Skills & Experience in Programming</h3>
+      
+          <h3 className='intro-title animate-charcter'>Skills & Experience in Programming</h3>
         </div>
+        
         <div className="skill-container">
+          
             {skills.map((skill, index)=> 
+            
               <div className="skill-box" key={index}>
+                
                 <div className="skill-title">
-                  <div className="skill-img">
+                  <div className="skill-img ">
                     {skill.icon}
                   </div>
-                  <h3>{skill.title}</h3>
+                  <h3 className='hover-underline-animation'>{skill.title}</h3>
                 </div>
-                  <p className="skill-description">{skill.description}</p>
-                  
-              <div className="rectangle"></div>
+                  <p className="skill-description ">{skill.description}</p>
               </div>
             )}
             

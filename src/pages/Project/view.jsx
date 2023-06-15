@@ -48,10 +48,10 @@ function Project() {
   ]
   return (
     <div id='project'>
-      <h2 className='intro-title'>Projects</h2>
+      <h2 className='intro-title animate-charcter'>Projects</h2>
       <div className="skill-container">
             {data.map((project, index)=> 
-              <div className="skill-box project-box skill-box2" key={index}>
+              <div className=" project-box skill-box2" key={index}>
                 <div className="skill-title">
                   <div className="project-img">
                     <img src={project.img} alt={project.title}/>

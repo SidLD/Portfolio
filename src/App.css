@@ -6,7 +6,9 @@ body{
   background-color: #27374D;
   font-family: montserrat;
   height: 100vh;
+  margin-top: 0;
 }
+
 .rectange{
   height: 100vh;
   color: red;
@@ -25,12 +27,13 @@ body{
   text-decoration: none;
   font-size: 30px;
   color: #fff;
-  padding: 20px 20px;
+  padding: 10px 10px;
   float: left; 
+  
 }
 nav{
   float: right;
-  margin: 5px 20px;
+  margin: 15px 20px 0px;
 }
 .link{
   text-decoration: none;
@@ -38,11 +41,16 @@ nav{
   display: inline-block;
   padding: 20px 10px;
   font-weight: 900;
+  
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  transition-duration: 1s;
 }
 
 .active{
-  background-color: #1b9bff;
-  border: solid 1px #F4D3D3;
+  background-color: #27374D;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   transition: .5s;
 }
 .burger{
@@ -64,8 +72,9 @@ nav{
 .card{
   font-family: "Candara" , sans-serif;
   width: 100vw;
-  height: 3000px;
+  height: 2800px;
   margin: 3% 3%;
+  margin-top: 5px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -80,21 +89,26 @@ nav{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.65) 100%), no-repeat center center scroll;
+  /* clip-path: polygon(100% 0%, 0% 0% , 0% 65%, 1% 64.95%, 2% 64.8%, 3% 64.6%, 4% 64.3%, 5% 63.9%, 6% 63.45%, 7% 62.9%, 8% 62.25%, 9% 61.55%, 10% 60.8%, 11% 59.95%, 12% 59.05%, 13% 58.1%, 14% 57.1%, 15% 56.05%, 16% 55%, 17% 53.9%, 18% 52.8%, 19% 51.65%, 20% 50.5%, 21% 49.35%, 22% 48.2%, 23% 47.05%, 24% 45.9%, 25% 44.8%, 26% 43.75%, 27% 42.75%, 28% 41.75%, 29% 40.8%, 30% 39.9%, 31% 39.1%, 32% 38.35%, 33% 37.65%, 34% 37.05%, 35% 36.5%, 36% 36.05%, 37% 35.65%, 38% 35.35%, 39% 35.15%, 40% 35.05%, 41% 35%, 42% 35.05%, 43% 35.2%, 44% 35.45%, 45% 35.75%, 46% 36.15%, 47% 36.65%, 48% 37.2%, 49% 37.85%, 50% 38.55%, 51% 39.35%, 52% 40.2%, 53% 41.1%, 54% 42.05%, 55% 43.05%, 56% 44.1%, 57% 45.15%, 58% 46.3%, 59% 47.4%, 60% 48.55%, 61% 49.7%, 62% 50.85%, 63% 52%, 64% 53.15%, 65% 54.25%, 66% 55.35%, 67% 56.4%, 68% 57.45%, 69% 58.4%, 70% 59.35%, 71% 60.2%, 72% 61.05%, 73% 61.8%, 74% 62.45%, 75% 63.05%, 76% 63.6%, 77% 64.05%, 78% 64.4%, 79% 64.7%, 80% 64.85%, 81% 65%, 82% 65%, 83% 64.9%, 84% 64.75%, 85% 64.5%, 86% 64.2%, 87% 63.75%, 88% 63.25%, 89% 62.7%, 90% 62.05%, 91% 61.3%, 92% 60.5%, 93% 59.65%, 94% 58.75%, 95% 57.8%, 96% 56.8%, 97% 55.75%, 98% 54.65%, 99% 53.55%, 100% 52.4%); */
+  /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.65) 100%), no-repeat center center scroll; */
 }
 .clip{
   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%) !important;
 }
+
 .profile-img img{
   z-index: 1;
   width: 320px;
   height: 320px;
   position: relative;
   border-radius: 50%;
-  border: 10px solid white;
+  border: 3px solid white;
   margin-top: -75px;
   margin-bottom: 50px;
   transition-duration: 0.5s;
+  /* clip-path: polygon(2% 17%, 19% 84%, 50% 67%, 72% 85%, 99% 17%); */
+  box-shadow: 0 0 10px 0 black;
+  
 }
 .profile-img img:hover{
   transform: scale(1.1);
@@ -146,6 +160,10 @@ nav{
   word-wrap: break-word;
   border: 1px solid white;
   height: 230px;
+  transition-duration: 0.5s;
+}
+.skill-box:hover{
+  background-color: #024375;
 }
 .skill-title{
   display: flex;
@@ -169,10 +187,10 @@ nav{
 /* Contact */
 .contact-box{
   width: 80vh;
-  padding: 50px;
+  padding: 80px;
   background-color: #fff;
   box-shadow: 0 0 20px 0 #999;
-  top: 55%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -214,6 +232,7 @@ nav{
 .intro-title{
   color:white;
   text-align: center;
+  width: 100vw;
   font-size: 30px;
   margin: 20px auto 0px;
   z-index: 2;
@@ -287,6 +306,14 @@ nav{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+#project{
+  text-align: center;
+}
+#contact{
+  text-align: center;
+}
+
 .project-title{
   text-align: left;
   font-size: 18px;
@@ -308,23 +335,71 @@ nav{
 }
 .project-box{
   background-color: white;
-  /* border-radius: 10px; */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   color: black;
   padding: 0px;
   height: 300px;
-  
 }
+.project-box:hover{
+  transform: scale(1.05);
+}
+
 .project-box p{
   color: black;
 }
 
 .typed {
+  font-size: larger;
+  font-family: 'Pacifico', cursive;
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid;
   width: 0;
-  animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+  animation: typing 1.5s steps(40, end) forwards, blinking 1s infinite;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #6943f0 0%,
+    #8725f0 29%,
+    #df507f 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline;
+  font-size: 30px;
+      text-align: center;
+      align-items: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.landing-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 430px;
+  align-items: center;
+}
+.landing-page div{
+  padding: 100px;
+  /* border: 1px solid red; */
+  line-height: 2.2rem;
+  text-align: center;
 }
   
 @keyframes typing {
@@ -338,9 +413,28 @@ nav{
   100% {border-color: transparent}
 }
 
+.parallax {
+  /* The image used */
+  background-image: url('./asset/para.jpg');
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 @media screen and (max-width:990px){
+  .landing-page{
+    padding: 0px;
+    margin: 0px;
+  }
+  .landing-page div{
+    padding: 20px;
+  }
   .skill-container{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -362,9 +456,9 @@ nav{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    
     align-items: center;
   }
+  
   .skill-box{
     padding: 2rem 1rem;
     cursor: pointer;
@@ -398,6 +492,10 @@ nav{
     border: 1px solid white;
     height: 320px !important;
   }
+  .contact-box{
+    top: 55%;
+    padding: 20px;
+  }
   
 }
 @media screen and (max-width:850px){
@@ -411,6 +509,9 @@ nav{
   
 }
 @media screen and (max-width:600px){
+  .landing-page{
+    flex-direction: column;
+  }
   .skill-container{
     grid-template-columns: repeat(1, 1fr);
   }
