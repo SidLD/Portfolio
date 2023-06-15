@@ -109,10 +109,10 @@ function About() {
           <div className="profile-img">
             <img src={profile} alt='profile'/>
           </div>
-          <div className="card-content">
-            <h3>Hi! I'm Cid Libril</h3>
-            <p>I'm aspiring web developer and</p>
-            <p>A Bachelor Science in Computer Science Graduate</p>
+          <div className="card-content container">
+            <h3 className='typed'>Hi! I'm Cid Libril</h3>
+            <p className='typed'>I'm aspiring web developer and </p>
+            <p className='typed'>A Bachelor Science in Computer Science Graduate</p>
             <a href="./resume.pdf" className='resume'  download>Resume</a>
           </div>
           <div className="skill">
