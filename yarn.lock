@@ -3756,6 +3756,11 @@
   "resolved" "https://registry.npmjs.org/css-declaration-sorter/-/css-declaration-sorter-6.4.0.tgz"
   "version" "6.4.0"
 
+"css-doodle@^0.34.9":
+  "integrity" "sha512-vUtt0WrxLtLMgWW/l62dC0nuabKYWpWAG2biRXfQBXvDyRuARx1X9VobAOSA2f0mKjNpg0rOgtk+69Db6mLR7A=="
+  "resolved" "https://registry.npmjs.org/css-doodle/-/css-doodle-0.34.9.tgz"
+  "version" "0.34.9"
+
 "css-has-pseudo@^3.0.4":
   "integrity" "sha512-Vse0xpR1K9MNlp2j5w1pgWIJtm1a8qS0JwS9goFYcImjlHEmywP9VUF05aGBXzGpDJF86QXk4L0ypBmwPhGArw=="
   "resolved" "https://registry.npmjs.org/css-has-pseudo/-/css-has-pseudo-3.0.4.tgz"

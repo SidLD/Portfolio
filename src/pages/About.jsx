@@ -134,6 +134,8 @@ function About() {
                   <h3>{skill.title}</h3>
                 </div>
                   <p className="skill-description">{skill.description}</p>
+                  
+              <div className="rectangle"></div>
               </div>
             )}
             

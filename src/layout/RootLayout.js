@@ -15,8 +15,7 @@ function RootLayout() {
             </nav>
        </header>
        <main>
-{/*         
-       <span>Location:</span> <NavigationPath /> */}
+        
         <Outlet />
        </main>
     </div>

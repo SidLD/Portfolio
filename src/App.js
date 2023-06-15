@@ -9,7 +9,7 @@ import About from "./pages/About"
 import Project from "./pages/Project/view";
 import Contact from "./pages/Contact/view"
 import NotFound from "./pages/NotFound";
-
+import 'css-doodle';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
