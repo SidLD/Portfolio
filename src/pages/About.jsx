@@ -2,7 +2,6 @@ import React from 'react'
 import profile from "../asset/crop.jpg"
 import cardBackground from "../asset/cardBackground.jpg"
 
-
 function About() {
   const skills = [
     {
@@ -114,6 +113,7 @@ function About() {
             <h3>Hi! I'm Cid Libril</h3>
             <p>I'm aspiring web developer and</p>
             <p>A Bachelor Science in Computer Science Graduate</p>
+            <a href="./resume.pdf" className='resume'  download>Resume</a>
           </div>
           <div className="skill">
         <div className="skill-header">

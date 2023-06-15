@@ -208,8 +208,21 @@ nav{
   margin: 20px auto 0px;
   z-index: 2;
 }
-
-
+.resume{
+  text-decoration: none;
+  color: black;
+  background-color: #2ecc71;
+  
+  border-radius: 25px;
+  padding: 0px 20px;
+  transition-duration: 0.7s;
+}
+.resume:hover{
+  background-color: black;
+  
+  border: solid 1px white;
+  color: white;
+}
 /*project */
 
 .project-img img{
