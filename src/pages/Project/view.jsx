@@ -47,11 +47,11 @@ function Project() {
 
   ]
   return (
-    <div>
+    <div id='project'>
       <h2 className='intro-title'>Projects</h2>
       <div className="skill-container">
             {data.map((project, index)=> 
-              <div className="skill-box" key={index}>
+              <div className="skill-box skill-box2" key={index}>
                 <div className="skill-title">
                   <div className="project-img">
                     <img src={project.img} alt={project.title}/>

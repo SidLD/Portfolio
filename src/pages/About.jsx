@@ -73,7 +73,7 @@ function About() {
     {
       title: "Postgressql",
       icon:<i className="fa-sharp fa-solid fa-database fa-xl"></i>,
-      description: "It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications."
+      description: "It is a highly stable database management system, backed by more than 20 years of community development which has contributed to its high levels of resilience, integrity, and correctness."
     },
     {
       title: "Photoshop",
@@ -95,7 +95,7 @@ function About() {
   ]
   
   return (
-    <div className='about-me'>
+    <div className='about-me' id='about'>
       
       <h2 className='intro-title'>About Me</h2>    
       <div className='intro'> 

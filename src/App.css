@@ -252,5 +252,29 @@ nav{
     border: 1px solid white;
     height: 430px;
   }
-  
+  .skill-box2{
+    padding: 2rem 1rem;
+    cursor: pointer;
+    word-wrap: break-word;
+    border: 1px solid white;
+    height: 230px !important;
+  } 
+}
+@media screen and (max-width:1170px){
+  .skill-box{
+    padding: 2rem 1rem;
+    cursor: pointer;
+    word-wrap: break-word;
+    border: 1px solid white;
+    height: 300px;
+  }
+}
+@media screen and (max-width:500px){
+  .skill-box{
+    padding: 2rem 1rem;
+    cursor: pointer;
+    word-wrap: break-word;
+    border: 1px solid white;
+    height: 450px;
+  }
 }
