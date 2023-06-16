@@ -510,13 +510,13 @@ nav{
     grid-template-columns: repeat(1, 1fr);
   }
   .skill-box{
-    height: 180px;
+    height: 210px;
   }
   .skill-title h3{
     font-size: 20px;
   }
   .skill-description{
-    font-size: 17px;
+    font-size: 16px;
   }
   .project-img{
     height: 200px;
