@@ -7,7 +7,7 @@ function RootLayout() {
     <div className="root-layout">
        <header>
           <div  className='logo'> 
-              <Link to='/'><img src={logo} alt='logo'/></Link>
+              <Link to='/' className='logo-text'>Portfolio</Link>
           </div>
             <nav>
                 <NavLink className="link" to="">About</NavLink>

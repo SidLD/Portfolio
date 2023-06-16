@@ -73,12 +73,12 @@ function Contact() {
                 </Form.Item>
 
                     <Button block className='submit-btn' type="primary" htmlType="submit">
-                        Send <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        Send <i className="fa-sharp fa-solid fa-paper-plane"></i>
                     </Button>
                 <footer className='footer'>
-                    <p className='hover-underline-animation'><i class="fa-solid fa-location-dot"></i> Adress</p> 
-                    <p className='hover-underline-animation'><i class="fa-solid fa-envelope"></i> cidlibril5@gmail.com</p>
-                    <p className='hover-underline-animation'><i class="fa-solid fa-phone"></i> 09123456789</p>
+                    <p className='hover-underline-animation'><i className="fa-solid fa-location-dot"></i> Adress</p> 
+                    <p className='hover-underline-animation'><i className="fa-solid fa-envelope"></i> cidlibril5@gmail.com</p>
+                    <p className='hover-underline-animation'><i className="fa-solid fa-phone"></i> 09123456789</p>
                 </footer>
             </Form>
             {/* <form ref={form} onSubmit={handleFormSubmit} className='contact-box'>

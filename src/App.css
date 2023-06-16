@@ -347,6 +347,10 @@ nav{
 .project-box p{
   color: black;
 }
+.logo-text{
+  font-family: 'Pacifico', cursive;
+  font-size: 30px !important;
+}
 
 .typed {
   font-size: larger;
@@ -466,7 +470,7 @@ nav{
     height: 450px;
   }
   .skill-box2{
-    padding: 0.5rem 1rem !important;
+    padding: 0rem 0rem !important;
     cursor: pointer;
     word-wrap: break-word;
     border: 1px solid white;
@@ -520,6 +524,9 @@ nav{
   .ant-btn{
     width: 400px !important;
   }
+  .project-img img{
+    border: 1px black solid;
+ }
   
 }
 @media screen and (max-width:600px){
@@ -579,6 +586,9 @@ nav{
   .logo img{
     height: 30px !important;
   }
+  .project-img img{
+     border: 1px black solid;
+  }
 }
 
 @media screen and (max-width:1170px){
@@ -589,9 +599,16 @@ nav{
     border: 1px solid white;
     height: 320px !important;
   }
+  .link{
+    font-size: 13px !important;
+  }
   .contact-box{
     top: 55%;
     padding: 20px;
+  }
+  
+  .logo-text{
+    font-size: 20px !important;
   }
   
 }
@@ -603,6 +620,10 @@ nav{
     border: 1px solid white;
     height: 260px !important;
   }
+  .ant-form{
+    width: 350px !important;
+  }
+
   
 }
 @media screen and (max-width:400px){
