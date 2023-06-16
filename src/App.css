@@ -572,6 +572,9 @@ nav{
   .card{
     height: 6100px !important;
   }
+  .logo img{
+    height: 30px !important;
+  }
 }
 
 @media screen and (max-width:1170px){
