@@ -558,3 +558,28 @@ nav{
     width: 400px !important;
   }
 }
+
+@media screen and (max-width:396px){
+  .link{
+    font-size: 13px;
+  }
+  .typed{
+    font-size: 15px !important;
+  }
+  .project-box{
+    width: 300px !important;
+  }
+  .ant-form{
+    width: 300px !important;
+  }
+  .ant-form-item{
+    width: 200px !important;
+  }
+  .ant-input{
+    width: 200px;
+  }
+  .footer p{
+    font-size: 10px;
+  }
+
+}
