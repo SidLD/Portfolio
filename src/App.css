@@ -565,13 +565,17 @@ nav{
   .ant-form{
     height: 450px;
     padding: 30px 20px;
-    width: 400px;
+    width: 380px;
+  }
+  .ant-form-item{
+    width: 350px;
   }
   .ant-input{
-    width: 390px;
+    width: 350px;
   }
   .project-box{
     height: 340px !important;
+    width: 300px !important;
   }
   .project-tech{
     margin-top: 5px;
@@ -583,8 +587,11 @@ nav{
     height: 280px;
     width: 300px !important;
   }
-  .project-box{
-    width: 400px !important;
+  .link{
+    padding: 20px 5px;
+  }
+  #s{
+    width: 60px !important;
   }
 }
 
