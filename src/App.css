@@ -514,7 +514,7 @@ nav{
     height: 3500px !important;
   }
   .ant-form{
-    top: 35% !important;
+    top: 60% !important;
     width: 500px !important;
   }
   .ant-btn{
@@ -559,15 +559,19 @@ nav{
     height: 50px !important;
   }
   .ant-form{
-    top: 65% !important;
-    width: 400px !important;
-    height: 600px;
+    top: 60% !important;
+    width: 300px !important;
+    height: 500px;
   }
   .ant-form-item{
     width: 300px;
+    
   }
   .ant-btn{
-    width: 300px !important;
+    width: 200px !important;
+  }
+  .footer p{
+    font-size: 8px;
   }
   .card{
     height: 6100px !important;
