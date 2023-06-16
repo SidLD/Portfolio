@@ -376,7 +376,7 @@ nav{
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -487,180 +487,74 @@ nav{
     transition-duration: 0.7s;
   } 
 }
-@media screen and (max-width:1170px){
-  .skill-box{
-    padding: 2rem 1rem;
-    cursor: pointer;
-    word-wrap: break-word;
-    border: 1px solid white;
-    height: 320px !important;
 
-  }
-  .contact-box{
-    top: 55%;
-    padding: 20px;
-  }
-  .ant-form{
-    padding: 100px 50px !important;
-    top: 50px;
-  }
-  
-}
-@media screen and (max-width:850px){
-  .skill-box{
-    padding: 1rem 1rem;
-    cursor: pointer;
-    word-wrap: break-word;
-    border: 1px solid white;
-    height: 260px !important;
-  }
-  .card{
-    height: 3500px !important;
-  }
-  .ant-form{
-    top: 60% !important;
-    width: 500px !important;
-  }
-  .ant-btn{
-    width: 400px !important;
-  }
-  .project-img img{
-    border: 1px black solid;
- }
-  
-}
-@media screen and (max-width:600px){
+ @media screen and (max-width:1170px){
   .landing-page{
     flex-direction: column;
   }
+  .card{
+    height: 110%;
+  }
+  .skill-box{
+    height: 200px;
+  }
+  .project-img{
+    border: 1px solid black;
+  }
+  .ant-form{
+    top: 60%;
+  }
+}
+@media screen and (max-width:650px){
   .skill-container{
     grid-template-columns: repeat(1, 1fr);
   }
-  .show-burger{
-    padding: 130px;
-    background-color: #27374D;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-  }
-  .hide{
-    display: none;
-  }
-  .card{
-    height: 7000px;
-  }
   .skill-box{
-    padding: 2rem 1.2rem;
-    cursor: pointer;
-    word-wrap: break-word;
-    border: 1px solid white;
-    height: 280px !important; 
+    height: 180px;
+  }
+  .skill-title h3{
+    font-size: 20px;
+  }
+  .skill-description{
+    font-size: 17px;
+  }
+  .project-img{
+    height: 200px;
+  }
+  .project-box{
+    height: 310px !important;
+  }
+}
+
+@media screen and (max-width:576px){
+  .ant-form{
+    height: 450px;
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width:456px){
+  .ant-form{
+    height: 450px;
+    padding: 30px 20px;
+    width: 400px;
+  }
+  .ant-input{
+    width: 390px;
+  }
+  .project-box{
+    height: 340px !important;
+  }
+  .project-tech{
+    margin-top: 5px;
   }
   .typed{
-    font-size: medium;   
+    font-size: 18px !important;
   }
-  .link{
-    font-size: 10px !important;
-  }
-  header{
-    height: 50px !important;
-  }
-  .ant-form{
-    top: 60% !important;
+  .skill-box{
+    height: 280px;
     width: 300px !important;
-    height: 500px;
   }
-  .ant-form-item{
-    width: 300px;
-    
-  }
-  .ant-btn{
-    width: 200px !important;
-  }
-  .footer p{
-    font-size: 8px;
-  }
-  .card{
-    height: 6100px !important;
-  }
-  .logo img{
-    height: 30px !important;
-  }
-  .project-img img{
-     border: 1px black solid;
-  }
-}
-
-@media screen and (max-width:1170px){
-  .skill-box{
-    padding: 2rem 1rem;
-    cursor: pointer;
-    word-wrap: break-word;
-    border: 1px solid white;
-    height: 320px !important;
-  }
-  .link{
-    font-size: 13px !important;
-  }
-  .contact-box{
-    top: 55%;
-    padding: 20px;
-  }
-  
-  .logo-text{
-    font-size: 20px !important;
-  }
-  
-}
-@media screen and (max-width:850px){
-  .skill-box{
-    padding: 1rem 1rem;
-    cursor: pointer;
-    word-wrap: break-word;
-    border: 1px solid white;
-    height: 260px !important;
-  }
-  .ant-form{
-    width: 350px !important;
-  }
-
-  
-}
-@media screen and (max-width:400px){
-  .landing-page{
-    flex-direction: column;
-  }
-  .skill-container{
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .show-burger{
-    padding: 130px;
-    background-color: #27374D;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-  }
-  .hide{
-    display: none;
-  }
-  .card{
-    height: 7000px;
-  }
-  .skill-box{
-    padding: 2rem 1.2rem;
-    width: 300px;
-    cursor: pointer;
-    word-wrap: break-word;
-    border: 1px solid white;
-    height: 280px !important; 
-  }
-  .ant-form{
-    width: 300px;
-  }
-  .ant-form-item{
-    width: 200px;
-  }
-  .typed{
-    font-size: 15px !important;   
+  .project-box{
+    width: 400px !important;
   }
 }
