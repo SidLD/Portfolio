@@ -129,7 +129,7 @@ function About() {
           
             {skills.map((skill, index)=> 
             
-              <div className="skill-box" key={index}>
+              <div className="skill-box" id={index} key={index}>
                 
                 <div className="skill-title">
                   <div className="skill-img ">
