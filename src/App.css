@@ -80,7 +80,6 @@ nav{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  
   align-items: center;
 }
 .card-img{
@@ -491,10 +490,15 @@ nav{
     word-wrap: break-word;
     border: 1px solid white;
     height: 320px !important;
+
   }
   .contact-box{
     top: 55%;
     padding: 20px;
+  }
+  .ant-form{
+    padding: 100px 50px !important;
+    top: 50px;
   }
   
 }
@@ -505,6 +509,16 @@ nav{
     word-wrap: break-word;
     border: 1px solid white;
     height: 260px !important;
+  }
+  .card{
+    height: 3500px !important;
+  }
+  .ant-form{
+    top: 35% !important;
+    width: 500px !important;
+  }
+  .ant-btn{
+    width: 400px !important;
   }
   
 }
@@ -529,10 +543,96 @@ nav{
     height: 7000px;
   }
   .skill-box{
-    padding: 2rem 1rem;
+    padding: 2rem 1.2rem;
     cursor: pointer;
     word-wrap: break-word;
     border: 1px solid white;
     height: 280px !important; 
+  }
+  .typed{
+    font-size: medium;   
+  }
+  .link{
+    font-size: 10px !important;
+  }
+  header{
+    height: 50px !important;
+  }
+  .ant-form{
+    top: 65% !important;
+    width: 400px !important;
+    height: 600px;
+  }
+  .ant-form-item{
+    width: 300px;
+  }
+  .ant-btn{
+    width: 300px !important;
+  }
+  .card{
+    height: 6100px !important;
+  }
+}
+
+@media screen and (max-width:1170px){
+  .skill-box{
+    padding: 2rem 1rem;
+    cursor: pointer;
+    word-wrap: break-word;
+    border: 1px solid white;
+    height: 320px !important;
+  }
+  .contact-box{
+    top: 55%;
+    padding: 20px;
+  }
+  
+}
+@media screen and (max-width:850px){
+  .skill-box{
+    padding: 1rem 1rem;
+    cursor: pointer;
+    word-wrap: break-word;
+    border: 1px solid white;
+    height: 260px !important;
+  }
+  
+}
+@media screen and (max-width:400px){
+  .landing-page{
+    flex-direction: column;
+  }
+  .skill-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .show-burger{
+    padding: 130px;
+    background-color: #27374D;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+  }
+  .hide{
+    display: none;
+  }
+  .card{
+    height: 7000px;
+  }
+  .skill-box{
+    padding: 2rem 1.2rem;
+    width: 300px;
+    cursor: pointer;
+    word-wrap: break-word;
+    border: 1px solid white;
+    height: 280px !important; 
+  }
+  .ant-form{
+    width: 300px;
+  }
+  .ant-form-item{
+    width: 200px;
+  }
+  .typed{
+    font-size: 15px !important;   
   }
 }
