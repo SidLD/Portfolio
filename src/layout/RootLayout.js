@@ -5,16 +5,32 @@ import { NavLink, Outlet, Link } from 'react-router-dom'
 function RootLayout() {
   let prev = 'h'
   const slide = (e) => {
+    let mobile = false;
+    const bodySize = document.body.clientWidth;
+    if(bodySize <= 397){
+      mobile = true;
+      document.getElementById("s").style.width = "50px";
+    }else{
+      document.getElementById("s").style.width = "70px";
+    }
     if(prev === 'h') {
       switch (e.target.id) {
         //Do Nothing
         case 'h':
           break;
         case 'p':
-        document.getElementById("s").style.right = "85px";
+          if(mobile){
+            document.getElementById("s").style.right = "65px";
+          }else{
+            document.getElementById("s").style.right = "85px";
+          }
           break;
         case 'c':
-        document.getElementById("s").style.right = "18px";
+          if(mobile){
+            document.getElementById("s").style.right = "15px";
+          }else{
+            document.getElementById("s").style.right = "18px";
+          }
           break;
         default:
           break;
@@ -23,13 +39,21 @@ function RootLayout() {
     else if(prev === "p"){
       switch (e.target.id) {
         case 'h':
-        document.getElementById("s").style.right = "165px";
+        if(mobile){
+          document.getElementById("s").style.right = "115px";
+        }else{
+          document.getElementById("s").style.right = "165px";
+        }
           break;
         case 'p':
           //Do nothing
           break;
         case 'c':
-        document.getElementById("s").style.right = "18px";
+          if(mobile){
+            document.getElementById("s").style.right = "15px";
+          }else{
+            document.getElementById("s").style.right = "18px";
+          }
           break;
         default:
           break;
@@ -37,10 +61,18 @@ function RootLayout() {
     }else{
       switch (e.target.id) {
         case 'h':
-          document.getElementById("s").style.right = "165px";
+          if(mobile){
+            document.getElementById("s").style.right = "115px";
+          }else{
+            document.getElementById("s").style.right = "165px";
+          }
           break;
         case 'p':
-        document.getElementById("s").style.right = "85px";
+          if(mobile){
+            document.getElementById("s").style.right = "65px";
+          }else{
+            document.getElementById("s").style.right = "85px";
+          }
           break;
         case 'c':
           //Do nothing
@@ -48,7 +80,6 @@ function RootLayout() {
         default:
           break;
       }
-      document.getElementById("s").style.width = "70px";
     }
     prev = e.target.id
   }

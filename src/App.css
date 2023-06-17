@@ -12,7 +12,6 @@ body{
 .rectange{
   height: 100vh;
   color: red;
-  
 }
 
 .root-layout header{
@@ -121,7 +120,7 @@ nav{
   /* background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 60%, rgba(0,0,0,0.65) 100%), no-repeat center center scroll; */
 }
 .clip{
-  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%) !important;
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%)  ;
 }
 
 .profile-img img{
@@ -352,7 +351,7 @@ nav{
   padding: 20px;
 }
 .project-tech a{
-  color: black !important;
+  color: black  !important;
   border: 2px solid orange;
   padding: 10px;
   transition-duration: 0.7s;
@@ -378,7 +377,7 @@ nav{
 }
 .logo-text{
   font-family: 'Pacifico', cursive;
-  font-size: 30px !important;
+  font-size: 30px  ;
 }
 
 .typed {
@@ -422,7 +421,7 @@ nav{
 }
 .landing-page{
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   justify-content: space-between;
   height: 430px;
   align-items: center;
@@ -458,11 +457,26 @@ nav{
   background-size: cover;
 }
 
+ @media screen and (max-width:1170px){
+  .card{
+    height: 110%;
+  }
+  .skill-box{
+    height: 200px;
+  }
+  .project-img{
+    border: 1px solid black;
+  }
+  .ant-form{
+    top: 60%;
+  }
+}
 
-@media screen and (max-width:990px){
+@media screen and (max-width:993px){
   .landing-page{
     padding: 0px;
     margin: 0px;
+    flex-direction: column !important;
   }
   .landing-page div{
     padding: 20px;
@@ -481,7 +495,7 @@ nav{
   .card{
     font-family: "Candara" , sans-serif;
     width: 100vw;
-    height: 5000px;
+    height: 3800px;
     margin: 3% 3%;
     overflow: hidden;
     border-radius: 10px;
@@ -496,43 +510,31 @@ nav{
     cursor: pointer;
     word-wrap: break-word;
     border: 1px solid white;
-    height: 450px;
+    height: 250px;
+  }
+  .skill-box h3{
+    font-size: 20px;
   }
   .skill-box2{
-    padding: 0rem 0rem !important;
+    padding: 0rem 0rem  ;
     cursor: pointer;
     word-wrap: break-word;
     border: 1px solid white;
-    height: 280px !important;
+    height: 280px  ;
+  }
+  .project-box{
+    height: 250px;
   }
   .project-tech{
     text-align: right;
     padding: 10px;
   }
   .project-tech a{
-    color: black !important;
+    color: black  ;
     border: 2px solid orange;
     padding: 5px;
     transition-duration: 0.7s;
   } 
-}
-
- @media screen and (max-width:1170px){
-  .landing-page{
-    flex-direction: column;
-  }
-  .card{
-    height: 110%;
-  }
-  .skill-box{
-    height: 200px;
-  }
-  .project-img{
-    border: 1px solid black;
-  }
-  .ant-form{
-    top: 60%;
-  }
 }
 @media screen and (max-width:650px){
   .skill-container{
@@ -551,7 +553,10 @@ nav{
     height: 200px;
   }
   .project-box{
-    height: 310px !important;
+    height: 310px  ;
+  }
+  .card{
+    height: 5750px;
   }
 }
 
@@ -574,42 +579,63 @@ nav{
     width: 350px;
   }
   .project-box{
-    height: 340px !important;
-    width: 300px !important;
+    height: 340px  ;
+    width: 300px  ;
   }
   .project-tech{
     margin-top: 5px;
   }
   .typed{
-    font-size: 18px !important;
+    font-size: 15px !important;
+  }
+  .typed{
+    font-size: 18px  ;
   }
   .skill-box{
     height: 280px;
-    width: 300px !important;
+    width: 300px  ;
   }
   .link{
     padding: 20px 5px;
   }
   #s{
-    width: 60px !important;
+    width: 60px  ;
+  }
+  .card{
+    height: 6900px;
   }
 }
 
 @media screen and (max-width:396px){
+  .intro-title{
+    font-size: 15px;
+  }
+  .card-img img{
+    height: 550px;
+  }
+  .landing-page div{
+    height: 150px;
+  }
   .link{
     font-size: 13px;
   }
   .typed{
-    font-size: 15px !important;
+    font-size: 15px  ;
   }
   .project-box{
-    width: 300px !important;
+    width: 270px  ;
+  }
+  
+  .logo-text{
+    font-size: 20px !important;
+    padding: 20px  10px!important;
   }
   .ant-form{
-    width: 300px !important;
+    top: 50%;
+    width: 280px  ;
   }
   .ant-form-item{
-    width: 200px !important;
+    width: 200px  ;
   }
   .ant-input{
     width: 200px;
@@ -617,5 +643,23 @@ nav{
   .footer p{
     font-size: 10px;
   }
-
+}
+@media screen and (max-width:396px){
+  .link{
+    padding: auto 0px;
+    width: 38px;
+  }
+  .profile-img img{
+    width: 200px;
+    height: 200px;
+  }
+  .typed{
+    font-size: 12px !important;
+  }
+  .resume{
+    font-size: 15px;
+  }
+  .skill-box{
+    width: 200px;
+  }
 }
