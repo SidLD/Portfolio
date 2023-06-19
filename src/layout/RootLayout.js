@@ -1,7 +1,5 @@
-import { NavLink, Outlet, Link } from 'react-router-dom'
-// import NavigationPath from '../components/NavigationPath'
-
-// import logo from "../asset/icons8-portfolio-48.png"
+import { NavLink, Outlet } from 'react-router-dom'
+import { ThemeContext } from '../lib/ThemeContext';
 function RootLayout() {
   let prev = 'h'
   const slide = (e) => {
@@ -84,10 +82,18 @@ function RootLayout() {
     prev = e.target.id
   }
   return (
-    <div className="root-layout">
-       <header>
-          <div  className='logo'> 
-              <Link to='/' className='logo-text'>Portfolio</Link>
+    <ThemeContext.Consumer>{(context) => {
+      const {toogleTheme, isLightTheme, light, dark } = context
+      const theme = isLightTheme ? light: dark;
+      return(
+        <div className="root-layout">
+        <header>
+          <div  className='logo' onClick={toogleTheme}> 
+              <h1 style={{color:theme.projectColor}} className='logo-text'>
+                {!isLightTheme && <i className="fa-solid fa-moon"></i>}
+                -Portfolio- 
+                {isLightTheme && <i className="fa-regular fa-sun"></i>}
+              </h1>
           </div>
             <nav>
                 <NavLink className="link" id='h' onClick={slide} to="">About</NavLink>
@@ -97,10 +103,12 @@ function RootLayout() {
             </nav>
        </header>
        <main>
-        
         <Outlet />
        </main>
     </div>
+      )
+    }
+    }</ThemeContext.Consumer>
   )
 }
 
