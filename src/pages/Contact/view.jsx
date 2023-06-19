@@ -89,9 +89,9 @@ function Contact() {
                         Send <span className="space"></span><i className="fa-sharp fa-solid fa-paper-plane"></i>
                     </Button>
                 <footer className='footer'>
-                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-location-dot"></i><span className="space"></span> Adress</p> 
-                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-envelope"></i>    <span className="space"></span>   cidlibril5@gmail.com</p>
-                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-phone"></i>       <span className="space"></span>   09123456789</p>
+                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-location-dot"></i><span className="space"></span>Adress</p> 
+                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-envelope"></i>    <span className="space"></span>cidlibril5@gmail.com</p>
+                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-phone"></i>       <span className="space"></span>09123456789</p>
                 </footer>
             </Form>
            </div>

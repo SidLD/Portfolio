@@ -22,7 +22,7 @@ export default class ThemeContextProvider extends Component {
             transitionDuration: "0.5s",
           },
           color: "#050505",
-          backgroundColor: "#f7f5f5",
+          backgroundColor: "#ffff",
           skillBorder: "1px solid #050505",
           cardBackgroundImg: cardBackgroundLight,
           border: "1px solid white",

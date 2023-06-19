@@ -536,13 +536,16 @@ input:checked + .slider:before {
     height: 110%;
   }
   .skill-box{
-    height: 200px;
+    height: 250px;
   }
   .project-img{
     border: 1px solid black;
   }
   .ant-form{
     top: 60%;
+  }
+  .landing-page div{
+    padding: 0px !important;
   }
 }
 @media screen and (max-width:993px){
@@ -687,13 +690,18 @@ input:checked + .slider:before {
     font-size: 15px;
   }
   .card-img img{
-    height: 550px;
+    height: 600px;
   }
   .landing-page div{
     height: 150px;
   }
+  .profile-img img{
+    height: 250px !important;
+    width: 250px !important;
+  }
   .link{
     font-size: 13px;
+    margin: auto 2px;
   }
   .typed{
     font-size: 15px  ;
@@ -703,11 +711,11 @@ input:checked + .slider:before {
   }
   
   .logo-text{
-    font-size: 10px;
+    font-size: 15px;
     padding: 10px  10px;
   }
   .ant-form{
-    top: 50%;
+    top: 60%;
     width: 280px  ;
   }
   .ant-form-item{
@@ -725,10 +733,6 @@ input:checked + .slider:before {
     padding: auto 0px;
     width: 38px;
   }
-  .profile-img img{
-    width: 200px;
-    height: 200px;
-  }
   .typed{
     font-size: 12px !important;
   }
@@ -737,5 +741,18 @@ input:checked + .slider:before {
   }
   .skill-box{
     width: 200px;
+  }
+  .ant-form{
+    top: 63%;
+    height: 480px;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:320px) {
+  .link{
+    font-size: 10px;
   }
 }

@@ -18,7 +18,7 @@ function RootLayout() {
           break;
         case 'p':
           if(mobile){
-            document.getElementById("s").style.right = "65px";
+            document.getElementById("s").style.right = "70px";
           }else{
             document.getElementById("s").style.right = "85px";
           }
@@ -38,7 +38,7 @@ function RootLayout() {
       switch (e.target.id) {
         case 'h':
         if(mobile){
-          document.getElementById("s").style.right = "115px";
+          document.getElementById("s").style.right = "128px";
         }else{
           document.getElementById("s").style.right = "165px";
         }
@@ -60,14 +60,14 @@ function RootLayout() {
       switch (e.target.id) {
         case 'h':
           if(mobile){
-            document.getElementById("s").style.right = "115px";
+            document.getElementById("s").style.right = "128px";
           }else{
             document.getElementById("s").style.right = "165px";
           }
           break;
         case 'p':
           if(mobile){
-            document.getElementById("s").style.right = "65px";
+            document.getElementById("s").style.right = "70px";
           }else{
             document.getElementById("s").style.right = "85px";
           }
