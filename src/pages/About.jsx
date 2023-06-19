@@ -101,13 +101,15 @@ function About() {
                                             />
                                     </div>
                                     <div className="card-content container">
-                                        <h3 className='typed '>
+                                        <h3 className='typed ' style={{color:theme.projectColor}}>
                                             Hi! I'm Cid Libril
                                             <i className="fa-solid fa-hand-wave"></i>
                                         </h3>
-                                        <p className='typed'>I'm aspiring web developer and
+                                        <p className='typed'>I'm an aspiring web developer, enthusiast
                                         </p>
-                                        <p className='typed'>A Bachelor Science in Computer Science Graduate</p>
+                                        <p className='typed'>As a Computer Science Graduate, I had many experience</p>
+                                        <p className='typed'>in developing software at the backend</p>
+                                        <p className='typed'>where business logic and algorithms usally happens</p>
                                         <a href="./resume.pdf" className='resume' download>Download my Resume</a>
                                     </div>
 
@@ -130,12 +132,13 @@ function About() {
                                         <div className="skill-box"
                                             id={index}
                                             key={index}
-                                            style={{border: theme.skillBorder}}
+                                            style={{
+                                                border: theme.skillBorder,}}
                                             >
                                             <div className="skill-title" >
                                                 <div className="skill-img " style={{color: theme.color}}>
                                                     {skill.icon} </div>
-                                                <h3 className='hover-underline-animation' tyle={{color: theme.color}}>
+                                                <h3 className='hover-underline-animation' style={{color:theme.color}}>
                                                     { skill.title }</h3>
                                             </div>
                                             <p className="skill-description" style={{color: theme.color}}>

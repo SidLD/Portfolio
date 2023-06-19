@@ -6,6 +6,7 @@ import exam from '../../asset/exam.png'
 import bmi from '../../asset/BMIAge.png'
 import portfolio from '../../asset/portfolio.png'
 import tracker from '../../asset/tracker.png'
+import { ThemeContext } from '../../lib/ThemeContext'
 function Project() {
   const data = [
     {
@@ -47,7 +48,11 @@ function Project() {
 
   ]
   return (
-    <div id='project'>
+    <ThemeContext.Consumer>{(context) => {
+      // const {toogleTheme, isLightTheme, light, dark } = context
+      // const theme = isLightTheme ? light: dark;
+      return(
+        <div id='project'>
       <h2 className='intro-title animate-charcter'>Projects</h2>
       <div className="skill-container">
             {data.map((project, index)=> 
@@ -65,6 +70,10 @@ function Project() {
             
         </div>
     </div>
+      )
+    }}
+
+    </ThemeContext.Consumer>
   )
 }
 

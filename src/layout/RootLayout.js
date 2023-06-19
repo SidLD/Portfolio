@@ -91,7 +91,9 @@ function RootLayout() {
           <div  className='logo' onClick={toogleTheme}> 
               <h1 style={{color:theme.projectColor}} className='logo-text'>
                 {!isLightTheme && <i className="fa-solid fa-moon"></i>}
-                -Portfolio- 
+                <span> </span>
+                Portfolio
+                <span> </span>
                 {isLightTheme && <i className="fa-regular fa-sun"></i>}
               </h1>
           </div>

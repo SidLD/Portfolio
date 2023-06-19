@@ -1,6 +1,7 @@
 import React from 'react'
 import {Form, Input, Button} from 'antd'
 import { handleFormSubmit } from './index';
+import { ThemeContext } from '../../lib/ThemeContext';
 
 function Contact() {
     const submit = async (values) => {
@@ -30,16 +31,23 @@ function Contact() {
         }
     };  
     return (
-        <div id='contact'>
+        <ThemeContext.Consumer>{(context) => {
+            const {isLightTheme, light, dark } = context
+            const theme = isLightTheme ? light: dark;
+            return(
+                <div id='contact'>
             <h3 className='intro-title animate-charcter'>Contact Me</h3>
             <Form className='contact-box'
                 {...formItemLayout}
                 initialValues={
                     {remember: true}
                 }
-                autoComplete="off"
+                style={{backgroundColor: theme.backgroundColor}}
+                autoComplete="on"
                 onFinish={submit}>
-                <Form.Item label="Username" name="name"
+                <Form.Item label={
+                    <p style={{color:theme.color}}>Username</p>
+                } name="name"
                     rules={
                         [{
                                 required: true,
@@ -48,7 +56,10 @@ function Contact() {
                 }>
                     <Input  />
                 </Form.Item>
-                <Form.Item label="Email" name="email"
+                <Form.Item 
+                 label={
+                    <p style={{color:theme.color}}>Email</p>
+                } name="email"
                     rules={
                         [
                             {
@@ -62,7 +73,9 @@ function Contact() {
                 }>
                     <Input   />
                 </Form.Item>
-                <Form.Item label="Message" name="message"
+                <Form.Item  label={
+                    <p style={{color:theme.color}}>Message</p>
+                } name="message"
                     rules={
                         [{
                                 required: true,
@@ -72,21 +85,20 @@ function Contact() {
                     <Input.TextArea  />
                 </Form.Item>
 
-                    <Button block className='submit-btn' type="primary" htmlType="submit">
-                        Send <i className="fa-sharp fa-solid fa-paper-plane"></i>
+                    <Button block className='submit-btn' type="primary" htmlType="submit" style={{color:theme.color}} >
+                        Send <span className="space"></span><i className="fa-sharp fa-solid fa-paper-plane"></i>
                     </Button>
                 <footer className='footer'>
-                    <p className='hover-underline-animation'><i className="fa-solid fa-location-dot"></i> Adress</p> 
-                    <p className='hover-underline-animation'><i className="fa-solid fa-envelope"></i> cidlibril5@gmail.com</p>
-                    <p className='hover-underline-animation'><i className="fa-solid fa-phone"></i> 09123456789</p>
+                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-location-dot"></i><span className="space"></span> Adress</p> 
+                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-envelope"></i>    <span className="space"></span>   cidlibril5@gmail.com</p>
+                    <p className='hover-underline-animation' style={{color:theme.color}}><i className="fa-solid fa-phone"></i>       <span className="space"></span>   09123456789</p>
                 </footer>
             </Form>
-            {/* <form ref={form} onSubmit={handleFormSubmit} className='contact-box'>
-            <input placeholder='Name' className='input-field' type="text" name="name" />
-            <input placeholder='Email' className='input-field' type="email" name="email" />
-            <textarea placeholder='Message' className='input-field' name="message" />
-            <input className='submit-btn' type="submit" value="Submit" />
-        </form>  */} </div>
+           </div>
+            )
+        }}
+
+        </ThemeContext.Consumer>
     )
 }
 

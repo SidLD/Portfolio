@@ -7,6 +7,7 @@ body{
   font-family: montserrat;
   height: 100vh;
   margin-top: 0;
+  transition-duration: 0.5s;
 }
 
 .rectange{
@@ -221,6 +222,7 @@ nav{
   align-items: center;
   display: flex;
   flex-direction: column;
+  ;
 }
 /* .ant-form-item{
   padding: 8px;
@@ -330,6 +332,9 @@ nav{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.space{
+  margin: 0px 3px;
+}
 
 #project{
   text-align: center;
@@ -379,9 +384,9 @@ nav{
 }
 
 .typed {
-  font-size: larger;
+  font-size: 50px;
   font-family: 'Pacifico', cursive;
-  overflow: hidden;
+  /* overflow: hidden; */
   white-space: nowrap;
   border-right: 2px solid;
   width: 0;
@@ -516,6 +521,15 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media screen and (max-width:1249px){
+  .skill-description{
+    font-size: 18px;
+  }
+  .contact-box{
+    top: 58%;
+  }
 }
  @media screen and (max-width:1170px){
   .card{

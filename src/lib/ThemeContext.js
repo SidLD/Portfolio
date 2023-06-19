@@ -1,6 +1,6 @@
 import React, { Component, createContext } from 'react'
 import cardBackgroundBlack from "../asset/cardBackground.jpg"
-import cardBackgroundLight from "../asset/backgroundLight.jpg"
+import cardBackgroundLight from "../asset/cardbackgroundLight.jpg"
 import profile from "../asset/crop.jpg"
 import profilePS from "../asset/ProfilePS.jpg"
 
@@ -26,7 +26,7 @@ export default class ThemeContextProvider extends Component {
           skillBorder: "1px solid #050505",
           cardBackgroundImg: cardBackgroundLight,
           border: "1px solid white",
-          projectColor: "#ffff",
+          projectColor: "#ff9900",
         },
         dark :{
           profile: profile,
