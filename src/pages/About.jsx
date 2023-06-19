@@ -105,11 +105,11 @@ function About() {
                                             Hi! I'm Cid Libril
                                             <i className="fa-solid fa-hand-wave"></i>
                                         </h3>
-                                        <p className='typed'>I'm an aspiring web developer, enthusiast
+                                        <p className='typed'>I'm an aspiring web developer enthusiast.
                                         </p>
                                         <p className='typed'>As a Computer Science Graduate, I had many experience</p>
-                                        <p className='typed'>in developing software at the backend</p>
-                                        <p className='typed'>where business logic and algorithms usally happens</p>
+                                        <p className='typed'>in developing software usually at the backend</p>
+                                        <p className='typed'>where business logic and algorithms usually happens.</p>
                                         <a href="./resume.pdf" className='resume' download>Download my Resume</a>
                                     </div>
 
