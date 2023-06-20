@@ -105,7 +105,7 @@ function RootLayout() {
           </div>
             <nav>
                 <NavLink className="link" id='h' onClick={slide} to="">About</NavLink>
-                <NavLink className="link" id='p' onClick={slide} to="project">Projects</NavLink>
+                <NavLink className="link" id='p' onClick={slide} to="project">Project</NavLink>
                 <NavLink className="link" id='c' onClick={slide} to="contact">Contact</NavLink>
                 <div id='s'></div>
             </nav>
