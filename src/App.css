@@ -415,7 +415,9 @@ nav{
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
+  top: 5px;
+  left: 10px;
+  width: 40px;
   height: 10px;
   /* left: 20px; */
 }
@@ -445,7 +447,7 @@ nav{
   content: "";
   height: 8px;
   width: 8px;
-  left: 13px;
+  left: 3px;
   bottom: 1px;
   background-color: white;
   -webkit-transition: .4s;
@@ -599,6 +601,39 @@ input:checked + .slider:before {
   }
   #intro-skill{
     font-size: 15px;
+  }
+  .logo-text{
+    font-size: 18px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width:320px) {
+  .card-content h3{
+    font-size: 20px;
+  }
+  .card-content p{
+    font-size: 12px;
+  }
+  .profile-img img{
+    width: 200px !important;
+  }
+  .skill-header{
+    margin-top: 150px;
+  }
+  .skill-container{
+    grid-template-columns: repeat(1, 260px);
+  }
+  .skill-box{
+    height: 300px;
+  }
+  .card{
+    height: 7750px;
+  }
+  #intro-skill{
+    font-size: 15px;
+  }
+  .contact-box{
+    top: 70%;
   }
   .logo-text{
     font-size: 18px;

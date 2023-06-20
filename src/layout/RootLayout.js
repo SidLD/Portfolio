@@ -98,10 +98,6 @@ function RootLayout() {
                 {!isLightTheme && <i className="fa-solid fa-moon  fa-2xs"></i>}
                 
               </h1>
-              <label class="switch">
-                  <input type="checkbox" onClick={toogleTheme}/>
-                  <span className="slider round"></span>
-                </label>
           </div>
             <nav>
                 <NavLink className="link" id='h' onClick={slide} to="">About</NavLink>
@@ -111,6 +107,10 @@ function RootLayout() {
             </nav>
        </header>
        <main>
+        <label class="switch">
+                  <input type="checkbox" onClick={toogleTheme}/>
+                  <span className="slider round"></span>
+                </label>
         <Outlet />
        </main>
     </div>

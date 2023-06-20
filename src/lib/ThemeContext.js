@@ -9,7 +9,7 @@ export const ThemeContext = createContext()
 
 export default class ThemeContextProvider extends Component {
     state = {
-        isLightTheme: false,
+        isLightTheme: true,
         light: {
           profile:profilePS,
           profileDesign: {
