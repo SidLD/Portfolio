@@ -92,6 +92,7 @@ function About() {
                                     <img src={theme.cardBackgroundImg}
                                         alt='profile'/>
                                 </div>
+                                <div className='about-container'>
                                 <div className="landing-page">
                                     <div className="profile-img ">
                                         <img src={theme.profile}
@@ -114,38 +115,29 @@ function About() {
                                     </div>
 
                                 </div>
-                                <div className="skill">
                                     <div className="skill-header">
-                                        <br/>
-                                        <br/>
-                                        <br/>
-                                        <br/>
-                                        <br/>
-
-                                        <h3 className='intro-title animate-charcter'>Skills & Experience in Programming</h3>
+                                            <h3 id='intro-skill' className='intro-title animate-charcter'>Skills & Experience in Programming</h3>
                                     </div>
-
                                     <div className="skill-container">
-
-                                        {
-                                        skills.map((skill, index) => 
-                                        <div className="skill-box"
-                                            id={index}
-                                            key={index}
-                                            style={{
-                                                border: theme.skillBorder,}}
-                                            >
-                                            <div className="skill-title" >
-                                                <div className="skill-img " style={{color: theme.color}}>
-                                                    {skill.icon} </div>
-                                                <h3 className='hover-underline-animation' style={{color:theme.color}}>
-                                                    { skill.title }</h3>
-                                            </div>
-                                            <p className="skill-description" style={{color: theme.color}}>
-                                                {skill.description}</p>
-                                        </div>)
-                                    } </div>
-                                    <ul></ul>
+                                            {
+                                            skills.map((skill, index) => 
+                                            <div className="skill-box"
+                                                id={index}
+                                                key={index}
+                                                style={{
+                                                    border: theme.skillBorder,}}
+                                                >
+                                                <div className="skill-title" >
+                                                    <div className="skill-img " style={{color: theme.color}}>
+                                                        {skill.icon} </div>
+                                                    <h3 className='hover-underline-animation' style={{color:theme.color}}>
+                                                        { skill.title }</h3>
+                                                </div>
+                                                <p className="skill-description" style={{color: theme.color}}>
+                                                    {skill.description}</p>
+                                            </div>)
+                                        } 
+                                    </div>
                                 </div>
                             </div>
                         </div>

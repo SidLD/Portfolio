@@ -9,11 +9,6 @@ body{
   margin-top: 0;
   transition-duration: 0.5s;
 }
-
-.rectange{
-  height: 100vh;
-  color: red;
-}
 .root-layout header{
   background-color: #526D82;
   display: flex;
@@ -38,21 +33,6 @@ nav{
   border-top-right-radius: 25px;
   transition: .5s;
 }
-/* #s::before {
-  content: "";
-  position: absolute;
-  
-  background-color: #27374D;
-  border: 1px solid red;
-  bottom: 5px;
-  left: -9px;
-  height: 10px;
-  width: 25px;
-  border-top-left-radius: 25px;
-  
-  box-shadow: 0 -25px 0 0 #001f3f; /* This is where the magic happens! 
-} 
-*/
 .logo{
   display: flex;
   flex-direction: column;
@@ -76,12 +56,6 @@ nav{
   z-index: 1;
 }
 
-/* .active{
-  background-color: #27374D;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  transition: .5s;
-} */
 .burger{
   display: none;
 }
@@ -89,7 +63,7 @@ nav{
 /*About Me */
 .about-me{
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   align-items: center;
   text-align: center;
 }
@@ -100,8 +74,6 @@ nav{
 }
 .card{
   font-family: "Candara" , sans-serif;
-  width: 100vw;
-  height: 2800px;
   margin: 3% 3%;
   margin-top: 5px;
   overflow: hidden;
@@ -110,10 +82,13 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 2800px;
 }
 .card-img{
-  width: 100%;
-  height: 100px;
+  /* width: 100%;
+  height: 100px; */
+  position: relative;
+  z-index: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
@@ -123,23 +98,27 @@ nav{
 .clip{
   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%)  ;
 }
-
-/* .profile-img img{
-  z-index: 1;
-  width: 320px;
-  height: 320px;
-  position: relative;
-  border-radius: 50%;
-  border: 3px solid white;
-  margin-top: -75px;
-  margin-bottom: 50px;
-  transition-duration: 0.5s;
-  box-shadow: 0 0 10px 0 black;  
-} */
 .profile-img img:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+.about-container{
+  position: relative;
+  top: -600px;
 }
 
+.landing-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.landing-page div{
+  padding: 120px;
+  line-height: 2.2rem;
+  text-align: center;
+}
+  
 .card-content{
   font-size: 25px;
   text-align: center;
@@ -151,25 +130,13 @@ nav{
 .card-content h3{
   font-weight: bold;
 }
-
-/* Skill Header */
-.skill-header{
-  padding: 1rem;
-  position: relative;
-}
-.skill-header:after{
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 100px;
-  background-color: #2ecc71;
-}
 .project-img{
-  width: 100%;
-  height: 180px;
-  object-fit: contain;
+  border: 1px solid black;
 }
+.skill-header{
+  margin-top: 50px;
+}
+
 .skill-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -215,7 +182,7 @@ nav{
   padding: 80px;
   background-color: #fff;
   box-shadow: 0 0 20px 0 #999;
-  top: 52%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -365,10 +332,9 @@ nav{
 .project-box{
   background-color: white;
   border-radius: 10px;
+  overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   color: black;
-  padding: 0px;
-  height: 300px;
 }
 .project-box:hover{
   transform: scale(1.05);
@@ -422,20 +388,6 @@ nav{
     background-position: 200% center;
   }
 }
-.landing-page{
-  display: flex;
-  flex-direction: row !important;
-  justify-content: space-between;
-  height: 430px;
-  align-items: center;
-}
-.landing-page div{
-  padding: 100px;
-  /* border: 1px solid red; */
-  line-height: 2.2rem;
-  text-align: center;
-}
-  
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -523,236 +475,133 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-width:1249px){
-  .skill-description{
+@media screen and (max-width:1180px) {
+  .skill-container{
+    grid-template-columns: repeat(2, 400px);
+  }
+  .card{
+    height: 3800px;
+  }
+}
+@media screen and (max-width:1108px) {
+  .landing-page div{
+    padding: 65px;
+  }
+  .skill-header{
+    margin-top: 180px;
+  }
+  .card{
+    height: 3850px;
+  }
+}
+@media screen and (max-width:990px) {
+  .landing-page{
+    flex-direction: column;
+  }
+  .landing-page div{
+    padding: 0px;
+  }
+  .profile-img{
+    margin-top: 50px;
+  }
+  .skill-header{
+    margin-top: 50px;
+  }
+  .card{
+    height: 3850px;
+  }
+}
+@media screen and (max-width:875px) {
+  .skill-container{
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+@media screen and (max-width:765px) {
+  .skill-container{
+    grid-template-columns: repeat(1, 400px);
+  }
+  .card{
+    height: 6600px;
+  }
+}
+@media screen and (max-width:575px) {
+  .contact-box{
+    top: 68%;
+  }
+  #intro-skill{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:491px) {
+  .card-content p {
     font-size: 18px;
   }
+}
+@media screen and (max-width:455px) {
   .contact-box{
+    width: 400px;
+    padding: 20px 40px;
     top: 58%;
   }
 }
- @media screen and (max-width:1170px){
-  .card{
-    height: 110%;
-  }
-  .skill-box{
-    height: 250px;
-  }
-  .project-img{
-    border: 1px solid black;
-  }
-  .ant-form{
-    top: 60%;
-  }
-  .landing-page div{
-    padding: 0px !important;
-  }
-}
-@media screen and (max-width:993px){
-  .landing-page{
-    padding: 0px;
-    margin: 0px;
-    flex-direction: column !important;
-  }
-  .landing-page div{
-    padding: 20px;
-  }
-  .skill-container{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .project-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .skill-title p, .skill-title h3, .skill-description{
+@media screen and (max-width:435px) {
+  .card-content p {
     font-size: 15px;
   }
-  .card{
-    font-family: "Candara" , sans-serif;
-    width: 100vw;
-    height: 3800px;
-    margin: 3% 3%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .ant-row{
+    width: 280px;
   }
-  
-  .skill-box{
-    padding: 2rem 1rem;
-    cursor: pointer;
-    word-wrap: break-word;
-    border: 1px solid white;
-    height: 250px;
-  }
-  .skill-box h3{
-    font-size: 20px;
-  }
-  .skill-box2{
-    padding: 0rem 0rem  ;
-    cursor: pointer;
-    word-wrap: break-word;
-    border: 1px solid white;
-    height: 280px  ;
-  }
-  .project-box{
-    height: 250px;
-  }
-  .project-tech{
-    text-align: right;
-    padding: 10px;
-  }
-  .project-tech a{
-    color: black  ;
-    border: 2px solid orange;
-    padding: 5px;
-    transition-duration: 0.7s;
-  } 
 }
-@media screen and (max-width:650px){
+@media screen and (max-width:420px) {
   .skill-container{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 350px);
   }
-  .skill-box{
-    height: 210px;
-  }
-  .skill-title h3{
-    font-size: 20px;
-  }
-  .skill-description{
-    font-size: 16px;
-  }
-  .project-img{
-    height: 200px;
-  }
-  .project-box{
-    height: 310px  ;
-  }
-  .card{
-    height: 5750px;
-  }
-}
-@media screen and (max-width:576px){
-  .ant-form{
-    height: 450px;
-    padding: 30px 20px;
-  }
-}
-@media screen and (max-width:490px) {
-  .project-box{
-    height: 350px;
-  }
-}
-@media screen and (max-width:456px){
-  .ant-form{
-    height: 450px;
-    padding: 30px 20px;
+  .contact-box{
     width: 380px;
   }
-  .ant-form-item{
-    width: 350px;
+  .card-content h3{
+    font-size: 40px;
   }
-  .ant-input{
-    width: 350px;
+}
+@media screen and (max-width:400px) {
+  .logo-text{
+    font-size: 20px;
   }
-  .project-box{
-    height: 340px  ;
-    width: 300px  ;
+  .link{
+    font-size: 15px;
+    width: 35px;
   }
-  .project-tech{
-    margin-top: 5px;
-  }
-  .typed{
-    font-size: 15px !important;
-  }
-  .typed{
-    font-size: 18px  ;
+}
+@media screen and (max-width:350px) {
+  .skill-container{
+    grid-template-columns: repeat(1, 310px);
   }
   .skill-box{
     height: 280px;
-    width: 300px  ;
-  }
-  .link{
-    padding: 20px 5px;
-  }
-  #s{
-    width: 60px  ;
   }
   .card{
-    height: 6900px;
+    height: 7000px;
   }
-}
-@media screen and (max-width:396px){
-  .intro-title{
-    font-size: 15px;
-  }
-  .card-img img{
-    height: 600px;
-  }
-  .landing-page div{
-    height: 150px;
-  }
-  .profile-img img{
-    height: 250px !important;
-    width: 250px !important;
-  }
-  .link{
+  .card-content p{
     font-size: 13px;
-    margin: auto 2px;
   }
-  .typed{
-    font-size: 15px  ;
-  }
-  .project-box{
-    width: 270px  ;
-  }
-  
-  .logo-text{
-    font-size: 15px;
-    padding: 10px  10px;
-  }
-  .ant-form{
-    top: 60%;
-    width: 280px  ;
-  }
-  .ant-form-item{
-    width: 200px  ;
-  }
-  .ant-input{
-    width: 200px;
-  }
-  .footer p{
-    font-size: 10px;
-  }
-}
-@media screen and (max-width:396px){
-  .link{
-    padding: auto 0px;
-    width: 38px;
-  }
-  .typed{
-    font-size: 12px !important;
-  }
-  .resume{
-    font-size: 15px;
-  }
-  .skill-box{
-    width: 200px;
-  }
-  .ant-form{
-    top: 63%;
-    height: 480px;
+  .contact-box{
+    top: 65%;
+    width: 300px;
   }
   .footer{
-    display: flex;
     flex-direction: column;
   }
 }
-@media screen and (max-width:320px) {
-  .link{
-    font-size: 10px;
+@media screen and (max-width:333px) {
+  .skill-container{
+    grid-template-columns: repeat(1, 300px);
+  }
+  #intro-skill{
+    font-size: 15px;
+  }
+  .logo-text{
+    font-size: 18px;
+    margin-top: 5px;
   }
 }

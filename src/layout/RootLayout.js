@@ -88,14 +88,20 @@ function RootLayout() {
       return(
         <div className="root-layout">
         <header>
-          <div  className='logo' onClick={toogleTheme}> 
+          <div  className='logo'> 
               <h1 style={{color:theme.projectColor}} className='logo-text'>
-                {!isLightTheme && <i className="fa-solid fa-moon"></i>}
                 <span> </span>
                 Portfolio
                 <span> </span>
-                {isLightTheme && <i className="fa-regular fa-sun"></i>}
+    
+                {isLightTheme && <i className="fa-regular fa-sun fa-2xs"></i>}
+                {!isLightTheme && <i className="fa-solid fa-moon  fa-2xs"></i>}
+                
               </h1>
+              <label class="switch">
+                  <input type="checkbox" onClick={toogleTheme}/>
+                  <span className="slider round"></span>
+                </label>
           </div>
             <nav>
                 <NavLink className="link" id='h' onClick={slide} to="">About</NavLink>
